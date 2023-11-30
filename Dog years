@@ -1,0 +1,20 @@
+// creating a variable to rep my age
+let myAge = 28; 
+// the variable below represents the first 2 years because dogs age 10.5 years in the first 2
+let earlyYears = 2; 
+earlyYears *= 10.5; 
+//  we have already accounted for the first 2 years above, laterYears is every year after 2
+let laterYears = myAge - 2; 
+// After age 2, dogs age at a rate of 4 years per 1 human year
+laterYears *= 4; 
+//early and later years 
+const myAgeInDogYears = laterYears + earlyYears;
+
+console.log(earlyYears); 
+console.log(laterYears); 
+
+const myName = 'Spencer'
+
+myName.toLowerCase(); 
+
+console.log(`My name is ${myName}. I am ${myAge} years old in human years, which is ${laterYears} years old in dog years.`);
