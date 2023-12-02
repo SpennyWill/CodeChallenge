@@ -32,7 +32,7 @@ function findFrequency (array) {
     return {most: mostKey, least: leastKey};
 
 }; 
-console.log(findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']));
+findFrequency(['a', 'b', 'c', 'a', 'b', 'c', 'a', 'a', 'd']);
 
 
 // Problem 3 - Worth 4 Points
@@ -44,8 +44,8 @@ const isPalindrome = (word) => {
     return (reversedWord === lowerCase); 
     };
 
-console.log(isPalindrome('canal')); // false
-console.log(isPalindrome('Ana')); // true
+isPalindrome('canal'); // false
+isPalindrome('Ana'); // true
 
 
 // Problem 4 - Worth 3 Points
@@ -64,7 +64,7 @@ const largestPair = (numbers) => {
     return Math.max(...products);; 
  
  }
- console.log(largestPair([5, 1, 2, 3, 1, 4]));
+ largestPair([5, 1, 2, 3, 1, 4]);
 
 
 // Problem 5 - Worth 3 Points
@@ -75,7 +75,7 @@ const removeParenth = (target) => {
     const result = target.replace(extract, ''); 
     return result; 
  }; 
- console.log(removeParenth('ido(not)liketocode'));  // 'idoliketocode'
+ removeParenth('ido(not)liketocode');  // 'idoliketocode'
 
 
 // Problem 6 - Worth 2 Points
