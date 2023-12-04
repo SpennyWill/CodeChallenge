@@ -23,15 +23,15 @@ return {most: mostKey, least: leastKey};
   };
   
   const isPalindrome = function(str) {
-    const lowerCase = word.toLowerCase();
+    const lowerCase = str.toLowerCase();
     const reversedWord = lowerCase.split('').reverse().join(''); 
     return (reversedWord === lowerCase); 
   };
   
   const largestPair = function(array) {
     const products = [];
-    for (let i = 0; i < numbers.length - 1; i++) {
-        products.push(numbers[i] * numbers[i + 1])
+    for (let i = 0; i < array.length - 1; i++) {
+        products.push(array[i] * array[i + 1])
     }
    
  
@@ -40,7 +40,7 @@ return {most: mostKey, least: leastKey};
   
   const removeParenth = function(str) {
     const extract = /\([^)]+\)/;
-    const result = target.replace(extract, ''); 
+    const result = str.replace(extract, ''); 
     return result; 
   };
   
